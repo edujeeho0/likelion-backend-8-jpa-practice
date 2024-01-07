@@ -2,6 +2,8 @@
 
 여러 Entity를 만들어 보고, CRUD를 위해 활용하는 연습을 해보자.
 
+[리뷰](review.md)
+
 ## Article - Comment
 
 게시글과 댓글의 관계를 나타내는 아래 ERD를 `@Entity`로 만들고,
