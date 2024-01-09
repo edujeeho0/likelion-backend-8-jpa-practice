@@ -303,7 +303,6 @@ VALUES
     ('Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu eros. Nam consequat dolor vitae','Randall Sims',13),
     ('rutrum. Fusce dolor quam, elementum at, egestas a, scelerisque sed, sapien. Nunc pulvinar arcu et pede. Nunc','Evangeline Valenzuela',29);
 
-
 -- Author
 INSERT INTO author (name,debut_year)
 VALUES
@@ -435,4 +434,29 @@ VALUES
     ('mauris','penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus',8,1),
     ('a mi fringilla mi lacinia mattis. Integer','ligula. Aenean gravida nunc sed pede. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus.',8,3);
 
+
+-- Shop
+INSERT INTO shop(name, homepage)
+VALUES ('logitech', 'https://logitech.com'),
+       ('leopold', 'https://leopold.co.kr'),
+       ('camel', 'https://camelmount.com');
+
+-- Item
+INSERT INTO item(name, price, shop_id)
+VALUES ('MX MASTER 3S', 108800, 1),
+       ('MX Vertical', 93720, 1),
+       ('MX Vertical LIFT', 7900, 1),
+       ('Keyboard 660 GB', 105000, 2),
+       ('Keyboard 750 GB', 125000, 2),
+       ('Keyboard 980 GB', 125000, 2),
+       ('Monitor Arm', 89000, 3),
+       ('Motion Desk', 255000, 3);
+
+INSERT INTO option(desc, add_price, item_id)
+VALUES ('Bluetooth', 20000, 4),
+       ('Bluetooth', 20000, 5),
+       ('Bluetooth', 20000, 6),
+       ('Dual', 60000, 7),
+       ('Medium Size', 25000, 8),
+       ('Large Size', 50000, 8);
 
